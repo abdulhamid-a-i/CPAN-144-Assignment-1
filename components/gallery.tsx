@@ -3,9 +3,9 @@ import { useState } from "react";
 import MainContent from "./MainContent";
 
 const fnvtitle ='Welcome to the Fallout: New Vegas Gallery'
-const fnvContent = 'Check out the world of Fallout'
+const fnvContent = 'Check out the post-apocalyptic world of Fallout'
 const hzdtitle ='Welcome to the Horizon Zero Dawn Gallery'
-const hzdContent = 'Check out a world ruled by machines of Hozizon Zero Dawn'
+const hzdContent = 'Take a peak at the world ruled by machines in Hozizon Zero Dawn'
 
 export function RenderGallery() {
     const [selectedGallery, setSelectedGallery] = useState('')

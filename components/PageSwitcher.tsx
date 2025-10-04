@@ -84,8 +84,10 @@ const GamesSection = () =>
         
            function searchGames(searchValue: string){
             //filter
+            //Setting user input into lowercase to prevent not finding game due to capitalization
             searchValue=searchValue.toLowerCase();
             const gamesToKeep = games.filter((game) =>
+              //Setting game title includes to lowercase to revent not finding game due to capitalization
               game.title.toLowerCase().includes(searchValue));
         
               setFilteredGames(gamesToKeep);

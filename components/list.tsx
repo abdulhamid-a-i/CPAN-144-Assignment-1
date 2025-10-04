@@ -9,6 +9,7 @@ export function List() {
         setStatus(value);
     };
 
+    // selects which list to display using a switch statement
   const renderContent = () => {
     switch (activeList) {
       case 'inactive':
@@ -69,6 +70,7 @@ export function List() {
         background:'cornflowerblue'
 
     }}
+    //Buttons change rendered list using functions called on a click event
      onClick={changeStatus} value={"active"} >Favorites</button>
     <button onClick={changeStatus} value={"inactive"} style={{
         marginBottom:1,
