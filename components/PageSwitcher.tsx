@@ -84,8 +84,9 @@ const GamesSection = () =>
         
            function searchGames(searchValue: string){
             //filter
+            searchValue=searchValue.toLowerCase();
             const gamesToKeep = games.filter((game) =>
-              game.title.includes(searchValue));
+              game.title.toLowerCase().includes(searchValue));
         
               setFilteredGames(gamesToKeep);
            }

@@ -46,6 +46,7 @@ export function List() {
 
   return (
     <div>
+    {renderContent()}
     <section style={{
         display:'flex',
         flexDirection:'column'
@@ -68,13 +69,13 @@ export function List() {
         background:'cornflowerblue'
 
     }}
-     onClick={changeStatus} value={"active"} >active</button>
+     onClick={changeStatus} value={"active"} >Favorites</button>
     <button onClick={changeStatus} value={"inactive"} style={{
         marginBottom:1,
         width:'100px',
-        background:'cornflowerblue'}}>inactive</button>
+        background:'cornflowerblue'}}>Currently playing</button>
     </div>
-      {renderContent()}
+      
     </section>
     </div>
   );
